@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.main {
+  width: 90%;
+  max-width: 900px;
+}
+
+.todo.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+/* Input Section */
+.add-todo {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.add-todo input,
+.add-todo button,
+.status-select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Inputs */
+.todo-input {
+  flex: 1;
+}
+
+.add-todo input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(99,102,241,0.3);
+}
+
+/* Add Button */
+.add-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+.add-btn:hover {
+  background: #4f46e5;
+}
+
+/* Table design */
+.todo-list-container {
+  overflow-x: auto;
+}
+
+.todo-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todo-list th,
+.todo-list td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+/* Header */
+.todo-list th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Row Hover */
+.todo-list tr:hover {
+  background: #f3f4f6;
+}
+
+/* Status Dropdown */
+.status-select {
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+/* Row colors based on status */
+.status-pending {
+  background: #fff3cd;     /* light yellow */
+}
+
+.status-in-progress {
+  background: #cfe2ff;     /* light blue */
+}
+
+.status-completed {
+  background: #d1e7dd;     /* light green */
+}
+
+
+/* Delete Icon */
+.delete-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+button img {
+  pointer-events: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
